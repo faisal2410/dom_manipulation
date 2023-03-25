@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Create a comment box and display comment</title>
+</head>
+<body>
+    <div class="comment-box">
+        <h2>Comments</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="comments-container"></div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
+
+<!-- In this example, we create a comment box that contains a form with two inputs for the user's name and comment, and a submit button. When the form is submitted, we prevent the default form submission behavior using event.preventDefault(), retrieve the values of the name and comment inputs, create a new div element to hold the comment, and append it to the commentsContainer using appendChild(). Finally, we reset the form using form.reset(). The comments are displayed using a CSS class called .comment that sets some basic styles for the comment container.
+
+This is just a simple example, but you can modify it to suit your needs by adding more inputs, validation, or additional styling. -->
