@@ -8,15 +8,22 @@
 </head>
 <body>
     <h1>Creating HTML Elements Dynamically</h1>
-    <div id="container"></div>
+    <div id="container">
+      <p>Bangladesh</p>
+      
+
+    </div>
+    <div id="test">
+
+    </div>
     <script>
         // create a new paragraph element
         const newParagraph = document.createElement('p');
 
-        // set the text content of the paragraph element
-        newParagraph.textContent = 'This is a new paragraph created using JavaScript!';
+        // // set the text content of the paragraph element
+        newParagraph.innerText = 'This is a new paragraph created using JavaScript!';
 
-        // get the container element and append the new paragraph element to it
+        // // get the container element and append the new paragraph element to it
         const container = document.getElementById('container');
         container.appendChild(newParagraph);
     </script>

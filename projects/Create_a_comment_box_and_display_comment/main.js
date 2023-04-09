@@ -9,10 +9,18 @@ form.addEventListener('submit', function (event) {
 
     const commentDiv = document.createElement('div');
     commentDiv.classList.add('comment');
-    commentDiv.innerHTML = `
-    <h3>${name}</h3>
-    <p>${comment}</p>
-  `;
+  //   commentDiv.innerHTML = `
+  //   <h3>${name}</h3>
+  //   <p>${comment}</p>
+  // `;
+
+  commentDiv.innerHTML = `
+  
+  <h3>${name}</h3>
+  <p>${comment}</p>
+  <h2>Bangladesh is my motherland</h2>
+
+  `
     commentsContainer.appendChild(commentDiv);
 
     form.reset();

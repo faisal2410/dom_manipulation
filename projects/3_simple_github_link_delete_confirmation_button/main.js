@@ -1,12 +1,13 @@
 const deleteLink = document.getElementById('delete-link');
 
 deleteLink.addEventListener('click', function (event) {
-    event.preventDefault();
+   event.preventDefault();
 
-    const confirmDelete = confirm('Are you sure you want to delete this repository?');
+    const confirmDelete = confirm('Are you sure ?');
 
     if (confirmDelete) {
         window.location.href = this.href;
+        // alert("hello world")
     }
 });
 

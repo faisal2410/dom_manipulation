@@ -77,7 +77,7 @@
 
 //     Another important concept in the DOM is the concept of the "document object". This represents the entire webpage, and can be used to access and manipulate any element on the page. For example, to change the title of the webpage, you could use the following code:
 
-//     document.title = "New Title";
+    // document.title = "New Title";
 //     In this example, we simply set the title property of the document object to the new title text.
 
 

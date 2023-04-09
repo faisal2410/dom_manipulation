@@ -6,3 +6,25 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+div {
+  animation: scale-rotate 2s ease-in-out;
+}
+
+@keyframes scale-rotate {
+  from {
+    transform: scale(0) rotate(0deg);
+    -webkit-transform: scale(0) rotate(0deg);
+    -moz-transform: scale(0) rotate(0deg);
+    -ms-transform: scale(0) rotate(0deg);
+    -o-transform: scale(0) rotate(0deg);
+}
+  to {
+    transform: scale(1) rotate(360deg);
+    -webkit-transform: scale(1) rotate(360deg);
+    -moz-transform: scale(1) rotate(360deg);
+    -ms-transform: scale(1) rotate(360deg);
+    -o-transform: scale(1) rotate(360deg);
+}
+}
+
